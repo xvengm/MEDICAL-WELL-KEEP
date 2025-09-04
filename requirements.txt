@@ -1,0 +1,37 @@
+# Core web framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.1
+
+# Templates
+jinja2==3.1.4
+
+# Environment variables
+python-dotenv==1.0.1
+
+# LangChain + integrations
+langchain==0.2.12
+langchain-community==0.2.11
+langchain-google-genai==1.0.6
+
+# Google Generative AI (Gemini)
+google-generativeai==0.8.2
+
+# Vector database (Chroma)
+chromadb==0.5.5
+
+# PDF parsing
+PyMuPDF==1.24.9
+
+# DOCX parsing
+python-docx==1.1.2
+
+# Optional legacy DOC parsing
+textract==1.6.5
+
+# Image OCR support
+pytesseract==0.3.13
+Pillow==10.4.0
+
+# Validation
+pydantic==2.9.2
+requests==2.32.3
