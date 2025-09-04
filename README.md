@@ -10,6 +10,8 @@ The app combines:
 
 ---
 
+https://github.com/user-attachments/assets/f4ab09c2-5ac9-4876-8b1c-0f42b407a132
+
 ## 🚀 Features
 - **File Upload Support**
   - PDF  
