@@ -5,33 +5,29 @@ uvicorn[standard]==0.30.1
 # Templates
 jinja2==3.1.4
 
-# Environment variables
+# Env
 python-dotenv==1.0.1
 
-# LangChain + integrations
+# LangChain + Gemini
 langchain==0.2.12
 langchain-community==0.2.11
 langchain-google-genai==1.0.6
-
-# Google Generative AI (Gemini)
 google-generativeai==0.8.2
+httpx==0.27.2         # <-- important pin to satisfy google-generativeai
 
-# Vector database (Chroma)
+# Vector DB (optional in serverless)
 chromadb==0.5.5
 
-# PDF parsing
+# PDF / DOCX
 PyMuPDF==1.24.9
-
-# DOCX parsing
 python-docx==1.1.2
 
-# Optional legacy DOC parsing
-textract==1.6.5
-
-# Image OCR support
+# OCR (remove if not needed at runtime)
+# textract often fails in Vercel; avoid in serverless
+# textract==1.6.5
 pytesseract==0.3.13
 Pillow==10.4.0
 
-# Validation
-pydantic==2.9.2
+# Validation / HTTP
+pydantic==2.8.2       # <-- slightly back from 2.9.x to avoid resolver churn
 requests==2.32.3
